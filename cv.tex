@@ -1,175 +1,445 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2015 Jan Küster
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV
-% LaTeX Template
-% Version 2.0 (8/5/13)
+
+%============================================================================%
 %
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
+%	DOCUMENT DEFINITION
 %
-% Original author:
-% Trey Hunner (http://www.treyhunner.com/)
-%
-% Important note:
-% This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%============================================================================%
+
+%we use article class because we want to fully customize the page and dont use a cv template
+\documentclass[10pt,A4]{article}	
+
 
 %----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%	ENCODING
 %----------------------------------------------------------------------------------------
 
-\documentclass{resume} % Use the custom resume.cls style
+%we use utf8 since we want to build from any machine
+\usepackage[utf8]{inputenc}		
 
-\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
-\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
-\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\name{Logan Reed} % Your name
-\address{(512) 839 - 6662 \\ me@loganreed.org}  % Your phone number and email
+%----------------------------------------------------------------------------------------
+%	LOGIC
+%----------------------------------------------------------------------------------------
 
+% provides \isempty test
+\usepackage{xifthen}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% some tex-live fonts - choose your own
+
+%\usepackage[defaultsans]{droidsans}
+%\usepackage[default]{comfortaa}
+%\usepackage{cmbright}
+\usepackage[default]{raleway}
+%\usepackage{fetamont}
+%\usepackage[default]{gillius}
+%\usepackage[light,math]{iwona}
+%\usepackage[thin]{roboto} 
+
+% set font default
+\renewcommand*\familydefault{\sfdefault} 	
+\usepackage[T1]{fontenc}
+
+% more font size definitions
+\usepackage{moresize}		
+
+
+%----------------------------------------------------------------------------------------
+%	PAGE LAYOUT  DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+%debug page outer frames
+%\usepackage{showframe}			
+
+
+%define page styles using geometry
+\usepackage[a4paper]{geometry}		
+
+% for example, change the margins to 2 inches all round
+\geometry{top=1.75cm, bottom=-.6cm, left=1.5cm, right=1.5cm} 	
+
+%use customized header
+\usepackage{fancyhdr}				
+\pagestyle{fancy}
+
+%less space between header and content
+\setlength{\headheight}{-5pt}		
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false
+    }
+
+%customize entries left, center and right
+\lhead{}
+\chead{ \small{\href{https://www.linkedin.com/in/logan-o-reed/}{linkedin.com/in/logan-o-reed} $\cdot$ \textcolor{sectcol}{\textbf{logan@loganreed.org}} $\cdot$ (512) 839 - 6662 $\cdot$ \textcolor{sectcol}{\textbf{Philadelphia, PA}} $\cdot$ github.com/LoganOReed}}
+\rhead{}
+
+
+%indentation is zero
+\setlength{\parindent}{0mm}
+
+%----------------------------------------------------------------------------------------
+%	TABLE /ARRAY DEFINITIONS
+%---------------------------------------------------------------------------------------- 
+
+%for layouting tables
+\usepackage{multicol}			
+\usepackage{multirow}
+
+%extended aligning of tabular cells
+\usepackage{array}
+
+\newcolumntype{x}[1]{%
+>{\raggedleft\hspace{0pt}}p{#1}}%
+
+
+%----------------------------------------------------------------------------------------
+%	GRAPHICS DEFINITIONS
+%---------------------------------------------------------------------------------------- 
+
+%for header image
+\usepackage{graphicx}
+
+%for floating figures
+\usepackage{wrapfig}
+\usepackage{float}
+%\floatstyle{boxed} 
+%\restylefloat{figure}
+
+%for drawing graphics		
+\usepackage{tikz}				
+\usetikzlibrary{shapes, backgrounds,mindmap, trees}
+
+
+%----------------------------------------------------------------------------------------
+%	Color DEFINITIONS
+%---------------------------------------------------------------------------------------- 
+
+\usepackage{color}
+
+%accent color
+\definecolor{sectcol}{RGB}{232,65,24}
+%dark background color
+\definecolor{bgcol}{RGB}{47,54,64}
+%light background / accent color
+\definecolor{softcol}{RGB}{127,143,166}
+
+%============================================================================%
+%
+%
+%	DEFINITIONS
+%
+%
+%============================================================================%
+
+%----------------------------------------------------------------------------------------
+% 	HEADER
+%----------------------------------------------------------------------------------------
+
+% remove top header line
+\renewcommand{\headrulewidth}{0pt} 
+
+%remove botttom header line
+\renewcommand{\footrulewidth}{0pt}	  	
+
+%remove pagenum
+\renewcommand{\thepage}{}	
+
+%remove section num		
+\renewcommand{\thesection}{}			
+
+%----------------------------------------------------------------------------------------
+% 	ARROW GRAPHICS in Tikz
+%----------------------------------------------------------------------------------------
+
+% a six pointed arrow poiting to the left
+\newcommand{\tzlarrow}{(0,0) -- (0.2,0) -- (0.3,0.2) -- (0.2,0.4) -- (0,0.4) -- (0.1,0.2) -- cycle;}	
+
+% include the left arrow into a tikz picture
+% param1: fill color
+%
+\newcommand{\larrow}[1]
+{\begin{tikzpicture}[scale=0.58]
+	 \filldraw[fill=#1!100,draw=#1!100!black]  \tzlarrow
+ \end{tikzpicture}
+}
+
+% a six pointed arrow poiting to the right
+\newcommand{\tzrarrow}{ (0,0.2) -- (0.1,0) -- (0.3,0) -- (0.2,0.2) -- (0.3,0.4) -- (0.1,0.4) -- cycle;}
+
+% include the right arrow into a tikz picture
+% param1: fill color
+%
+\newcommand{\rarrow}
+{\begin{tikzpicture}[scale=0.7]
+	\filldraw[fill=sectcol!100,draw=sectcol!100!black] \tzrarrow
+ \end{tikzpicture}
+}
+
+
+
+%----------------------------------------------------------------------------------------
+%	custom sections
+%----------------------------------------------------------------------------------------
+
+% create a coloured box with arrow and title as cv section headline
+% param 1: section title
+%
+\newcommand{\cvsection}[1]
+{
+\colorbox{sectcol}{\mystrut \makebox[1\linewidth][l]{
+\larrow{bgcol} \hspace{-8pt} \larrow{bgcol} \hspace{-8pt} \larrow{bgcol} \textcolor{white}{\textbf{#1}}\hspace{4pt}
+}}\\
+}
+
+%create a coloured arrow with title as cv meta section section
+% param 1: meta section title
+%
+\newcommand{\metasection}[2]
+{
+\begin{tabular*}{1\textwidth}{p{2.4cm} p{11cm}}
+\larrow{bgcol}	\normalsize{\textcolor{sectcol}{#1}}&#2\\[12pt]
+\end{tabular*}
+}
+
+
+
+%----------------------------------------------------------------------------------------
+%	 CV EVENT
+%----------------------------------------------------------------------------------------
+
+% creates a stretched box as cv entry headline followed by two paragraphs about 
+% the work you did
+% param 1:	event time i.e. 2014 or 2011-2014 etc.
+% param 2:	event name (what did you do?)
+% param 3:	institution (where did you work / study)
+% param 4:	what was your position
+% param 5:	some words about your contributions
+%
+\newcommand{\cvevent}[5]
+{
+\vspace{8pt}
+	\begin{tabular*}{1\textwidth}{p{2.3cm}  p{10.8cm} x{3.9cm}}
+ \textcolor{bgcol}{#1}& \textbf{#2} & \vspace{2.5pt}\textcolor{sectcol}{#3}
+
+	\end{tabular*}
+\vspace{-12pt}
+\textcolor{softcol}{\hrule}
+\vspace{6pt}
+	\begin{tabular*}{1\textwidth}{p{2.3cm} p{14.4cm}}
+&		 \larrow{bgcol}  #4\\[3pt]
+&		 \larrow{bgcol}  #5\\[6pt]
+	\end{tabular*}
+
+}
+
+\newcommand{\cvevents}[6]
+{
+\vspace{8pt}
+	\begin{tabular*}{1\textwidth}{p{2.3cm}  p{10.8cm} x{3.9cm}}
+ \textcolor{bgcol}{#1}& \textbf{#2} & \vspace{2.5pt}\textcolor{sectcol}{#3}
+
+	\end{tabular*}
+\vspace{-12pt}
+\textcolor{softcol}{\hrule}
+\vspace{6pt}
+	\begin{tabular*}{1\textwidth}{p{2.3cm} p{14.4cm}}
+&		 \larrow{bgcol}  #4\\[3pt]
+&		 \larrow{bgcol}  #5\\[3pt]
+&		 \larrow{bgcol}  #6\\[6pt]
+	\end{tabular*}
+
+}
+
+
+% creates a stretched box as 
+\newcommand{\cveventmeta}[2]
+{
+	\mbox{\mystrut \hspace{87pt}\textit{#1}}\\
+	#2
+}
+
+%----------------------------------------------------------------------------------------
+% CUSTOM STRUT FOR EMPTY BOXES
+%----------------------------------------- -----------------------------------------------
+\newcommand{\mystrut}{\rule[-.3\baselineskip]{0pt}{\baselineskip}}
+
+%----------------------------------------------------------------------------------------
+% CUSTOM LOREM IPSUM
+%----------------------------------------------------------------------------------------
+\newcommand{\lorem}
+{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.}
+
+
+
+%============================================================================%
+%
+%
+%
+%	DOCUMENT CONTENT
+%
+%
+%
+%============================================================================%
 \begin{document}
 
+
+%use our custom fancy header definitions
+\pagestyle{fancy}	
+
+
+%---------------------------------------------------------------------------------------
+%	TITLE HEADLINE
 %----------------------------------------------------------------------------------------
-%	OBJECTIVE
+\vspace{-20.55pt}
+
+% use this for multiple words like working titles etc.
+%\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\hspace{46pt}\HUGE{\textcolor{white}{\textsc{Jan Küster}} } \textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \parbox[b]{5cm}{   \large{ \textcolor{white}{{IT Consultant}}}\\
+% \large{ \textcolor{white}{{Resume}}}}
+%}}
+
+% use this for single words, e.g. CV or RESUME etc.
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\HUGE{\textcolor{white}{\textsc{Logan Reed}} } \textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \HUGE{\textcolor{white}{\textsc{Resume}} } }}
+
+
+%----------------------------------------------------------------------------------------
+%	HEADER IMAGE
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{OVERVIEW}
+\begin{figure}[H]
+\begin{flushright}
+	\includegraphics[clip,width=0.2\linewidth]{headshot.jpeg}	%trimming relative to image size!
+\end{flushright}
+\end{figure}
 
-{I am a graduate student at Rutgers University-Camden, with a focus on Algebra. My current research interests include Finite Group Theory, Vertex Operator Algebra, and Lie Algebras.}
-
-
-\end{rSection}
+%---------------------------------------------------------------------------------------
+%	QR CODE (optional)
 %----------------------------------------------------------------------------------------
+%\vspace{-136pt}
+%\hspace{0.75\linewidth}
+%\includegraphics[width=103pt]{qrcode}
+%\normalsize
+%\vspace{88pt}
+
+%---------------------------------------------------------------------------------------
+%	META SECTION
+%----------------------------------------------------------------------------------------
+
+\vspace{-114pt}
+
+\metasection{Status:}{M.S. Mathematical Sciences,  Data Scientist}
+\metasection{Fields:}{Software Development, Mathematical Research, Data Visualization} 
+\metasection{Tech:}{Python, Pandas, Numpy, Scipy, Scikit-Learn, Linux, SQL, Git, AWS}
+\metasection{Loves:}{Snowboarding, E-Sports, Boxing, Homotopy Type Theory}
+
+\vspace{6pt}
+
+%---------------------------------------------------------------------------------------
+%	SUMMARAY (optional)
+%----------------------------------------------------------------------------------------
+
+%\cvsection{Summary}\\
+%I am a digital media graduate (M.Sc.) with project experience in educational research as well as in the private sector. During my studies I focused on e-assessment software and moved over to b2b software for IBM Notes Domino.
+
+%Currently I develop and evaluate the next generation learning management system with Meteor based on an extensive nursing curriculum for healthcare education.  I also love fitness, martial arts, videogames, news and Sci-Fi series.\\[-2pt]
+
+%============================================================================%
+%
+%	CV SECTIONS AND EVENTS (MAIN CONTENT)
+%
+%============================================================================%
+%---------------------------------------------------------------------------------------
 %	EDUCATION SECTION
+%--------------------------------------------------------------------------------------
+\cvsection{Education}
+
+\cvevents{2021 - 2023}{Master of Science in Mathematical Sciences}{Rutgers University}{Master Thesis -  The Pólya–Szegő Conjecture on Polygons: A Numerical Approach}{Recieved the Mathematical Science Departments' ''Scholarship Award'' and the ''Distinguished Thesis'' award}{3.96/4.0 GPA}
+
+%\textcolor{softcol}{\hrule}
+
+%
+\cvevent{2017 - 2021}{Bachelor of Science in Applied Mathematics}{Texas State University}{Graduated Magna Cum Laude, 3.72/4.0 GPA, 6 time Dean's List recipient}{Minored in Computer Science, worked in Computer Science tutoring center}
+
+%\textcolor{softcol}{\hrule}
+
+
+%---------------------------------------------------------------------------------------
+%	EXPERIENCE
 %----------------------------------------------------------------------------------------
+\cvsection{Experience}
 
-\begin{rSection}{Education}
-
-{\bf Bachelor of Science in Applied Mathematics at Texas State University} \hfill {2018-2021}
-\\ 
-Minor in Computer Science.
-\\
-3.78 Upper Level Math GPA.
-\\
-\\
-{\bf Master of Science in Mathematics at Rutgers University-Camden} \hfill {2021-current}
+%
+\cvevents{2022 - }{Software Developer / Researcher in Biosciences Lab}{Rutgers University}{Collect and clean biological data using Pandas}{Model a novel data structure to optimize the system via Numpy and Scipy}{Scrum environment with interdepartmental team, maintained CI/CD pipeline, produced visualizations for the published paper}
 
 
-\end{rSection}
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
+%\textcolor{softcol}{\hrule}
 
-%\begin{rSection}{Relevant Courses}
+%
+\cvevent{2021 - }{Part Time Lecturer}{Rutgers University}{Developed diagnosis software to extract detailed information for individual exercises.}{Analyzed data to adapt lectures, predict grades, and recommend exam questions}
 
-%\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-%Honors Graph Theory. \\
-%Independent Study in Lie Algebra. \\
-%Discrete Mathematics. \\
-%Formal Language Theory. \\
-%Numerical Analysis. \\ 
-%Real and Complex Analysis. \\
-%\end{tabular}
+%\textcolor{softcol}{\hrule}
 
-%\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	OBJECTIVE
-%----------------------------------------------------------------------------------------
+%
+\cvevents{2020 - 2021}{Programmer / Assistant in Computational Number Theory}{Texas State University}{Converted pure math to MatLab/python, created interactive visualization using Jupyter}{Combined and converted unstructured databases to an SQL database}{Created the most comprehensive dataset publically available for the specific domain}
 
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Work History}
-
-\begin{rSubsection}{Private Math Tutor}{}{2018-current}{}
-\item I have tutored over 125 students, with 103 five star reviews. I have helped students in a wide range of subjects. These include K-5 math, collegiate mathematics, and undergraduate computer science. I have extensive experience in both online and in-person environments. If I am accepting new students, you can view my webpage at the following link: https://www.wyzant.com/Tutors/LoganR.
-
- 
-\end{rSubsection} 
+%\textcolor{softcol}{\hrule}
 
 
-%------------------------------------------------
 
-\begin{rSubsection}{Math Tutor at Math CATS}{}{2018-2020}{}
-\item I tutored through the Department of Mathematics at Texas State. I assisted students in their understanding of the material from undergraduate courses in small study groups. I also gave talks at the beginning of each semester to new students with the goal of student outreach.
+%---------------------------------------------------
+% PROJECT SECTION
+%---------------------------------------------------
+\cvsection{Projects}
 
-\end{rSubsection}
+\cvevents{2021-2023}{Graduate Thesis}{Rutgers University}{Generate novel data about PDEs, utilize parallel distributed cloud computing}{Build a robust DevOps pipeline to mitigate extreme computation costs}{Utilize CUDA and C's numerical linear algebra libraries to optimize costly routines}
 
-%--------------------------------------------------
+\cvevent{2022}{Personal Server}{}{Custom server utilizing Linux and Docker Compose to host web apps via a reverse proxy}{Automatically updates images and creates backups}
 
-\begin{rSubsection}{Math Tutor at the Math and Stats Lab at Rutgers-Camden}{}{2021-2022}{}
-\item I tutored through the Department of Mathematics at Rutgers-Camden. I assisted students in their understanding of the material from undergraduate and graduate courses.
+%-------------------------------------------------------------------------------------------------
+%	ARTIFICIAL FOOTER (fancy footer cannot exceed linewidth) 
+%--------------------------------------------------------------------------------------------------
 
-\end{rSubsection}
-
-%--------------------------------------------------
-
-\begin{rSubsection}{Part Time Lecturer}{}{Fall 2021}{}
-\item I taught an Intro to College Algebra course at Rutgers-Camden. I designed the structure and material of the class independently.
-
-\end{rSubsection}
-
-\begin{rSubsection}{Calculus One TA}{}{Spring 2022}{}
-\item I am a Teacher's Assistant for two sections of Calculus One at Rutgers-Camden. I set up the canvas pages, grade homework and exams, and maintain office hours for the students.
-
-\end{rSubsection}
-
-\end{rSection} 
-
-\begin{rSection}{INDEPENDENT STUDY TOPICS}{}{} {}
- \begin{rSubsection}{K-Forcing on the Cartesian product of Simple Graphs}{}{}{}
- \item Finding bounds on the K-Forcing number of the Cartesian product of common families of graphs, such as paths, cycles, and trees.
- \end{rSubsection}
- 
- \begin{rSubsection}{Complexes of DiGraph Homomorphisms}{}{}{}
- \item An independent study project to produce results similar to Babson and Kozlov on DiGraphs
- \item I produced a program that can calculate for any DiGraph G, $Hom(K_2,G)$, which will help show which properties of Hom Complexes carry over to DiGraphs.
- \end{rSubsection}
- 
-  \begin{rSubsection}{A Study on Minimal Prime Graphs of Simple Groups}{}{}{}
-  \item An independent study project with the goal of producing new Group Theoretic results using Graph Theory
-  \item Focus on an algorithm that can construct every Minimal Prime Graph.
- \end{rSubsection}
- 
- \begin{rSubsection}{Lie Algebra}{}{}{}
-  \item An independent studies course on the classical results from the algebraic field of Lie Algebra.
- \end{rSubsection}
- 
-  \begin{rSubsection}{Vertex Operator Algebra}{}{}{}
-  \item I am currently working on the field of Vertex Operator Algebra, with the aim of producing a master's thesis from my studies.
- \end{rSubsection}
-\end{rSection}
-
-\begin{rSection}{EXTRA CURRICULAR ACTIVITIES}
-
-\begin{rSubsection}{}{} {} {} 
-\item A member of the Math Club at Texas State 2018-2020.
-\item A member of the Problem Solvers Group at Texas State 2018-2019.
-\item Two time Dean's List recipient.
-\item Head Martial Arts Instructor from 2016-2018.
-\item National and World champion of Kata and Continuous Contact Sparring in 2017 and 2018.
-\item Created a program which efficiently takes in a First Order Logic statement and constructs an Analytic Tableaux to determine if the statement is true or false.
-\end{rSubsection}
-
-\end{rSection}
-%------------------------------------------------
+\null
+\vspace*{\fill}
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{www.jankuester.com} $\cdot$ \textcolor{white}{github.com/jankapunkt}}}
 
 
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{PROGRAMMING SKILLS} \itemsep -3pt  
-
-\item Experience creating procedural visualizations of mathematical concepts
-\item 5+ years of Python/C++/C\#/JavaScript
-\item 4+ years of \LaTeX
-
-\end{rSection} 
 
 
+%============================================================================%
+%
+%
+%
+%	DOCUMENT END
+%
+%
+%
+%============================================================================%
 \end{document}

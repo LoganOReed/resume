@@ -1,0 +1,13 @@
+# Fdb version 4
+["pdflatex"] 1684486881 "main.tex" "build/main.pdf" "main" 1684486882 2
+  "/usr/share/texmf-dist/web2c/texmf.cnf" 1680514707 39911 2da6c67557ec033436fe5418a70a8a61 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1681432798 8204103 183deb3b0a42d550bea030c0521b0228 ""
+  "build/deedy-resume-openfont.cls" 0 -1 0 ""
+  "build/main.aux" 1684486881 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "deedy-resume-openfont.cls" 0 -1 0 ""
+  "main.tex" 1684486880 7964 3077554d6a66eda26a1bf3b475fbda4d ""
+  (generated)
+  "build/main.aux"
+  "build/main.log"
+  "build/main.pdf"
+  (rewritten before read)
