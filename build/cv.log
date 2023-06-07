@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.13)  19 MAY 2023 09:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.13)  19 MAY 2023 10:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -722,30 +722,30 @@ LaTeX Warning: Unused global option(s):
 (build/cv.aux)
 \openout1 = `cv.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 310.
-LaTeX Font Info:    ... okay on input line 310.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 310.
-LaTeX Font Info:    ... okay on input line 310.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 310.
-LaTeX Font Info:    ... okay on input line 310.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 310.
-LaTeX Font Info:    ... okay on input line 310.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 310.
-LaTeX Font Info:    ... okay on input line 310.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 310.
-LaTeX Font Info:    ... okay on input line 310.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 310.
-LaTeX Font Info:    ... okay on input line 310.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 310.
-LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 310.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 327.
+LaTeX Font Info:    ... okay on input line 327.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 327.
+LaTeX Font Info:    ... okay on input line 327.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 327.
+LaTeX Font Info:    ... okay on input line 327.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 327.
+LaTeX Font Info:    ... okay on input line 327.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 327.
+LaTeX Font Info:    ... okay on input line 327.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 327.
+LaTeX Font Info:    ... okay on input line 327.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 327.
+LaTeX Font Info:    ... okay on input line 327.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 327.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 327.
  (/usr/share/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 310.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 310.
-LaTeX Font Info:    ... okay on input line 310.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 310.
-LaTeX Font Info:    ... okay on input line 310.
+LaTeX Font Info:    ... okay on input line 327.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 327.
+LaTeX Font Info:    ... okay on input line 327.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 327.
+LaTeX Font Info:    ... okay on input line 327.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -781,7 +781,7 @@ LaTeX Font Info:    ... okay on input line 310.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 310.
+Package hyperref Info: Link coloring OFF on input line 327.
 (build/cv.out) (build/cv.out)
 \@outlinefile=\write4
 \openout4 = `cv.out'.
@@ -806,97 +806,67 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 LaTeX Font Info:    Font shape `T1/Raleway-TLF/m/n' will be
-(Font)              scaled to size 29.86pt on input line 328.
+(Font)              scaled to size 29.86pt on input line 345.
 LaTeX Font Info:    Font shape `T1/Raleway-TLF/m/sc' will be
-(Font)              scaled to size 29.86pt on input line 328.
+(Font)              scaled to size 29.86pt on input line 345.
 
-Overfull \hbox (134.03741pt too wide) in paragraph at lines 328--329
+Overfull \hbox (134.03741pt too wide) in paragraph at lines 345--346
 [] [][][][][][] 
  []
 
 <headshot.jpeg, id=7, 225.4824pt x 235.1184pt>
 File: headshot.jpeg Graphic file (type jpg)
 <use headshot.jpeg>
-Package pdftex.def Info: headshot.jpeg  used on input line 337.
+Package pdftex.def Info: headshot.jpeg  used on input line 354.
 (pdftex.def)             Requested size: 102.42836pt x 106.80681pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 356.
+(Font)              <7> on input line 373.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 356.
+(Font)              <5> on input line 373.
 
-Underfull \hbox (badness 10000) in alignment at lines 356--356
+Underfull \hbox (badness 10000) in alignment at lines 373--373
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 357--357
+Underfull \hbox (badness 10000) in alignment at lines 374--374
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 358--358
+Underfull \hbox (badness 10000) in alignment at lines 375--375
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 359--359
+Underfull \hbox (badness 10000) in alignment at lines 376--376
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--360
+Underfull \hbox (badness 10000) in paragraph at lines 373--377
 
  []
 
 LaTeX Font Info:    Font shape `T1/Raleway-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 380.
+(Font)              scaled to size 10.0pt on input line 397.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 380--381
+Overfull \hbox (6.0pt too wide) in paragraph at lines 397--398
 [][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--381
+Underfull \hbox (badness 10000) in paragraph at lines 397--398
 
  []
 
 
-Overfull \hbox (7.5472pt too wide) in alignment at lines 382--382
+Overfull \hbox (7.5472pt too wide) in alignment at lines 399--399
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 382--382
-[][] 
- []
-
-
-Overfull \hbox (7.5472pt too wide) in alignment at lines 387--387
-[][][] 
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 387--387
-[][] 
- []
-
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 395--396
-[][][][][][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 395--396
-
- []
-
-
-Overfull \hbox (7.5472pt too wide) in alignment at lines 398--398
-[][][] 
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 398--398
+Underfull \hbox (badness 10000) in alignment at lines 399--399
 [][] 
  []
 
@@ -911,23 +881,23 @@ Underfull \hbox (badness 10000) in alignment at lines 404--404
  []
 
 
-Overfull \hbox (7.5472pt too wide) in alignment at lines 409--409
-[][][] 
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 409--409
-[][] 
- []
-
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 419--420
+Overfull \hbox (6.0pt too wide) in paragraph at lines 412--413
 [][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
+Underfull \hbox (badness 10000) in paragraph at lines 412--413
 
+ []
+
+
+Overfull \hbox (7.5472pt too wide) in alignment at lines 415--415
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 415--415
+[][] 
  []
 
 
@@ -941,28 +911,68 @@ Underfull \hbox (badness 10000) in alignment at lines 421--421
  []
 
 
-Overfull \hbox (7.5472pt too wide) in alignment at lines 423--423
+Overfull \hbox (7.5472pt too wide) in alignment at lines 426--426
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 423--423
+Underfull \hbox (badness 10000) in alignment at lines 426--426
+[][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 436--437
+[][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
+
+ []
+
+
+Overfull \hbox (7.5472pt too wide) in alignment at lines 438--438
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 438--438
+[][] 
+ []
+
+
+Overfull \hbox (7.5472pt too wide) in alignment at lines 440--440
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 440--440
+[][] 
+ []
+
+
+Overfull \hbox (7.5472pt too wide) in alignment at lines 442--442
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 442--442
 [][] 
  []
 
 LaTeX Font Info:    Font shape `T1/Raleway-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 431.
+(Font)              scaled to size 9.0pt on input line 449.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 431.
+(Font)              <9> on input line 449.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 431.
+(Font)              <6> on input line 449.
 
-Overfull \hbox (134.03741pt too wide) in paragraph at lines 431--432
+Overfull \hbox (134.03741pt too wide) in paragraph at lines 449--450
 [] [][][][][][] 
  []
 
 LaTeX Font Info:    Font shape `T1/Raleway-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 445.
+(Font)              scaled to size 9.0pt on input line 463.
 
 Package fancyhdr Warning: \headheight is too small (-5.0pt): 
 (fancyhdr)                Make it at least 11.0pt, for example:
@@ -980,15 +990,15 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23311 strings out of 476025
- 463389 string characters out of 5796532
+ 23312 strings out of 476025
+ 463397 string characters out of 5796532
  1900388 words of memory out of 5000000
- 43330 multiletter control sequences out of 15000+600000
+ 43331 multiletter control sequences out of 15000+600000
  594203 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,11n,89p,434b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/impallari/raleway/Raleway-Bold.pfb></usr/share/texmf-dist/fonts/type1/impallari/raleway/Raleway-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on build/cv.pdf (1 page, 258270 bytes).
+Output written on build/cv.pdf (1 page, 257399 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1684503196 "cv.tex" "build/cv.pdf" "cv" 1684503196 0
+["pdflatex"] 1684508126 "cv.tex" "build/cv.pdf" "cv" 1684508127 0
   "/usr/share/texmf-dist/fonts/enc/dvips/raleway/a_bzmckq.enc" 1678899023 2956 e1fccf4917ff205596489dab079ad56f ""
   "/usr/share/texmf-dist/fonts/enc/dvips/raleway/a_yqxcf3.enc" 1678899023 3099 96ea04418bfcf989c5380b59031fa39d ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1680514707 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -177,9 +177,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1680514707 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1681432807 4491781 539e3b5e308794ddb50e5f94f0e971f4 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1681432798 8204103 183deb3b0a42d550bea030c0521b0228 ""
-  "build/cv.aux" 1684503196 554 e6f85c6f44bbe194532b4fa1fd8ca02c "pdflatex"
-  "build/cv.out" 1684503196 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "cv.tex" 1684503194 15770 97aa67c608543f34d6370c7a11b1e9b5 ""
+  "build/cv.aux" 1684508126 554 e6f85c6f44bbe194532b4fa1fd8ca02c "pdflatex"
+  "build/cv.out" 1684508126 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "cv.tex" 1684508125 16074 bdfaa5355922828b22c424a60ceb62cf ""
   "headshot.jpeg" 1684487433 198394 abb19700136977e8fa5a0dd421948dea ""
   (generated)
   "build/cv.aux"

@@ -259,6 +259,23 @@
 
 }
 
+\newcommand{\cveventz}[4]
+{
+\vspace{8pt}
+	\begin{tabular*}{1\textwidth}{p{2.3cm}  p{10.8cm} x{3.9cm}}
+ \textcolor{bgcol}{#1}& \textbf{#2} & \vspace{2.5pt}\textcolor{sectcol}{#3}
+
+	\end{tabular*}
+\vspace{-12pt}
+\textcolor{softcol}{\hrule}
+\vspace{6pt}
+	\begin{tabular*}{1\textwidth}{p{2.3cm} p{14.4cm}}
+&		 \larrow{bgcol}  #4\\[6pt]
+	\end{tabular*}
+
+}
+
+
 \newcommand{\cvevents}[6]
 {
 \vspace{8pt}
@@ -379,12 +396,12 @@
 %--------------------------------------------------------------------------------------
 \cvsection{Education}
 
-\cvevents{2021 - 2023}{Master of Science in Mathematical Sciences}{Rutgers University}{Master Thesis -  The Pólya–Szegő Conjecture on Polygons: A Numerical Approach}{Recieved the Mathematical Science Departments' ''Scholarship Award'' and the ''Distinguished Thesis'' award}{3.96/4.0 GPA}
+\cveventz{2021 - 2023}{Master of Science in Mathematical Sciences}{Rutgers University}{Recieved the ''Outstanding Scholarship'' and ''Distinguished Thesis'' awards. 3.96 GPA}
 
 %\textcolor{softcol}{\hrule}
 
 %
-\cvevent{2017 - 2021}{Bachelor of Science in Applied Mathematics}{Texas State University}{Graduated Magna Cum Laude, 3.72/4.0 GPA, 6 time Dean's List recipient}{Minored in Computer Science, worked in Computer Science tutoring center}
+\cveventz{2017 - 2021}{Bachelor of Science in Applied Mathematics}{Texas State University}{Minored in Computer Science, 6 time Dean's List recipient. 3.72 GPA}
 
 %\textcolor{softcol}{\hrule}
 
@@ -395,7 +412,7 @@
 \cvsection{Experience}
 
 %
-\cvevents{2022 - }{Software Developer / Researcher in Biosciences Lab}{Rutgers University}{Collect and clean biological data using Pandas}{Model a novel data structure to optimize the system via Numpy and Scipy}{Scrum environment with interdepartmental team, maintained CI/CD pipeline, produced visualizations for the published paper}
+\cvevents{2022 - }{Software Developer / Researcher in Biosciences Lab}{Rutgers University}{Collect and clean biological data using Pandas}{Optimized the system via Numpy and Scipy, maintained CI/CD pipeline}{Scrum environment with interdepartmental team, produced published visualizations}
 
 
 %\textcolor{softcol}{\hrule}
@@ -406,7 +423,7 @@
 %\textcolor{softcol}{\hrule}
 
 %
-\cvevents{2020 - 2021}{Programmer / Assistant in Computational Number Theory}{Texas State University}{Converted pure math to MatLab/python, created interactive visualization using Jupyter}{Combined and converted unstructured databases to an SQL database}{Created the most comprehensive dataset publically available for the specific domain}
+\cvevent{2020 - 2021}{Programmer / Assistant in Computational Number Theory}{Texas State University}{Converted pure math to MatLab/python, created interactive visualization using Jupyter}{Combined and converted unstructured databases to an SQL database}
 
 
 %\textcolor{softcol}{\hrule}
@@ -418,10 +435,11 @@
 %---------------------------------------------------
 \cvsection{Projects}
 
-\cvevents{2021-2023}{Graduate Thesis}{Rutgers University}{Generate novel data about PDEs, utilize parallel distributed cloud computing}{Build a robust DevOps pipeline to mitigate extreme computation costs}{Utilize CUDA and C's numerical linear algebra libraries to optimize costly routines}
+\cvevents{2023}{Graduate Thesis}{Rutgers University}{Generate novel data about PDEs, utilize parallel distributed cloud computing}{Build a robust DevOps pipeline to mitigate extreme computation costs}{Utilize CUDA and C's numerical linear algebra libraries to optimize costly routines}
 
 \cvevent{2022}{Personal Server}{}{Custom server utilizing Linux and Docker Compose to host web apps via a reverse proxy}{Automatically updates images and creates backups}
 
+\cvevents{2022 - }{Competitive Smash Bros. Melee Analysis}{}{Scraped match data, cleaned the data to remove errors and users without matches}{Analyzed trends in players/characters, contributed to related computer vision project}{Implemented prediction using regression analysis}
 %-------------------------------------------------------------------------------------------------
 %	ARTIFICIAL FOOTER (fancy footer cannot exceed linewidth) 
 %--------------------------------------------------------------------------------------------------
