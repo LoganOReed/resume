@@ -1,12 +1,6 @@
-# Resumake Template 1
-> LaTeX code generated at [resumake.io](https://resumake.io)
+# My LaTeX Resume
+A modular resume template to make it easy to apply to different types of jobs
 
-## Usage
-To generate a PDF from this LaTeX code, navigate to this folder in a terminal and run:
-
-    pdflatex resume.tex
-
-## Requirements
-You will need to have `pdflatex` installed on your machine.
-
-Alternatively, you can use a site like [ShareLaTeX](https://sharelatex.com) to build and edit your LaTeX instead.
+## Use
+The basic biography info is in the main .tex file located in the root directory.
+Using the environments and commands defined in the class file, edit the .tex files in the info dir to your liking.

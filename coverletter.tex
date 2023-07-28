@@ -1,0 +1,52 @@
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                              % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage[scale=0.75]{geometry}
+
+
+
+%%% EDIT ME %%%
+\newcommand{\infoCategory}{software-engineer}
+\newcommand{\myEmployer}{Lockheed Martin}
+\newcommand{\myPosition}{Software Engineer}
+
+
+\newcommand{\myName}{Logan Reed}
+\newcommand{\myAddress}{Philadelphia, PA}
+\newcommand{\myNumber}{(512) 839 - 6662}
+\newcommand{\myEmail}{logan@loganreed.org}
+\newcommand{\myLinkedIn}{logan-o-reed}
+\newcommand{\myLinkedInLink}{https://www.linkedin.com/in/logan-o-reed/}
+\newcommand{\myGithub}{LoganOReed}
+\newcommand{\myGithubLink}{https://github.com/LoganOReed}
+\newcommand{\myWebsite}{loganreed.io}
+
+
+% personal data
+\name{}{\myName}
+\address{Philadelphia, PA}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone{\myNumber}                   % optional, remove / comment the line if not wanted
+\email{\myEmail}                               % optional, remove / comment the line if not wanted
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{\myEmployer}{}
+\date{\today}
+\opening{To whom it may concern,}
+\closing{Thank you for your time and consideration. I look forward to discussing the position and what I have to offer \myEmployer.}
+\makelettertitle
+
+\input{info/coverletter/\infoCategory.tex}
+\vspace{0.5cm}
+
+
+\makeletterclosing
+
+\end{document}
