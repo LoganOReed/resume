@@ -56,6 +56,8 @@
   \vspace*{-10pt}
   \begin{center}
     {\Huge \scshape {{#1}}}\\
+    \vspace{2mm}
+
     {#2} $\cdot$ {#3} $\cdot$ {#4}\\
     \faLinkedin \enspace \href{{#7}}{#5} \quad \faGithub \enspace \href{#8}{#6}\\ 
   \end{center}

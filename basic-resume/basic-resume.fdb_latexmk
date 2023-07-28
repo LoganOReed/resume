@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1690545525 "basic-resume.tex" "basic-resume/basic-resume.pdf" "basic-resume" 1690545526 0
+["pdflatex"] 1690554189 "basic-resume.tex" "basic-resume/basic-resume.pdf" "basic-resume" 1690554189 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1689853683 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1689853683 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1689853683 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -20,6 +20,7 @@
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1689853683 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1689853683 940 228d6584342e91276bf566bcf9716b83 ""
   "/usr/share/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--fontawesometwo.tfm" 1689853683 1360 76c648952c3cfb458d3ca1d9dde7e9bf ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1689853683 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1689853683 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb" 1689853683 145408 43d44302ca7d82d487f511f83e309505 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb" 1689853683 109713 30d6420127e1c84309fa7008a69b7170 ""
@@ -95,14 +96,14 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1690535417 4482925 a1a254cacf5c7108f7b28226c8f3b19f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1690525185 6768059 6f5d734607678856d61c463c8733da86 ""
   "basic-resume.tex" 1690545466 903 660e7513b90d5630d32d402c27ac1c8b ""
-  "basic-resume/basic-resume.aux" 1690545525 585 6e16dfdbfb4f3caf7114ede34dce9db6 "pdflatex"
-  "basic.cls" 1690545280 2339 20c74e39f700502ed8185dbadfe7916b ""
-  "info/achievements/software-engineer.tex" 1690545409 123 3621176a0a41672595c2167639d857de ""
+  "basic-resume/basic-resume.aux" 1690554189 585 6e16dfdbfb4f3caf7114ede34dce9db6 "pdflatex"
+  "basic.cls" 1690553455 2357 cf543b81accfb155ef3f076f46af81ff ""
+  "info/achievements/software-engineer.tex" 1690554188 349 0b8d91913881f2517808803e16b869bf ""
   "info/education/software-engineer.tex" 1690545405 224 57e6e0981870239672555d5b2bf5809d ""
-  "info/experience/software-engineer.tex" 1690545397 266 5427c301a917293510a944d3d727efbc ""
+  "info/experience/software-engineer.tex" 1690554143 1255 0e3014cde6c64920022896472d5934b3 ""
   "info/profile/software-engineer.tex" 1690545422 135 c0f703832cfee7d5a98f944b60068c19 ""
-  "info/projects/software-engineer.tex" 1690545427 236 d58e804442ffee841407c162cfa4e4d3 ""
-  "info/skills/software-engineer.tex" 1690545431 127 c4f13abe1c2e44acdbecbfe35c558bf9 ""
+  "info/projects/software-engineer.tex" 1690554175 595 aa85ddd22cdb5c60aadce64d8a17722b ""
+  "info/skills/software-engineer.tex" 1690551639 147 fb132ba6a7a95c7ffe9489fa151bd3a1 ""
   (generated)
   "basic-resume/basic-resume.aux"
   "basic-resume/basic-resume.log"
