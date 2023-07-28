@@ -1,4 +1,8 @@
+
 \documentclass[a4paper]{article}
+
+    \newcommand{\infoCategory}{software-engineer}
+
     \usepackage{fullpage}
     \usepackage{amsmath}
     \usepackage{amssymb}
@@ -78,41 +82,18 @@
 \end{center}
 
 %==== Experience ====%
-\header{Experience}
-\vspace{1mm}
-
-\textbf{Biosciences Research Lab} \hfill Camden, NJ\\
-\textit{Research Assistant} \hfill Jan 2022 - Present\\
-\vspace{-1mm}
-\begin{itemize} \itemsep 1pt
-	\item Code and such
-\end{itemize}
+\input{experience/\infoCategory.tex}
 
 %==== Education ====%
-\header{Education}
-\textbf{Rutgers University}\hfill Camden, NJ\\
-MS Mathematical Sciences \textit{GPA: 3.96} \hfill Aug 2021 - Jun 2023\\
-\vspace{2mm}
-\textbf{Texas State University}\hfill San Marcos, TX\\
-BS Applied Mathematics \textit{GPA: 3.7} \hfill Aug 2017 - Jun 2021\\
-\vspace{2mm}
+\input{education/\infoCategory.tex}
 
-\header{Skills}
-\begin{tabular}{ l l }
-	Misc:             & Java, C/C++, Python, Bash \\
-	Tools/Technology: & Git, Linux, Docker        \\
-\end{tabular}
-\vspace{2mm}
+%==== Skills ====%
+\input{skills/\infoCategory.tex}
 
-\header{Projects}
-{\textbf{Personal Server}} {\sl CI/CD, Linux, Docker, Python, Bash} \\
-A handbuilt server that uses docker compose to host multiple applications, served through a personal url via reverse proxies.\\
-\vspace*{2mm}
+%==== Projects ====%
+\input{projects/\infoCategory.tex}
 
-\header{Awards}
-\textbf{Outstanding Scholarship Award} \hfill Mathematical Sciences Department, Rutgers University\\
-\hfill May 2022\\
-\vspace*{2mm}
-
+%==== Awards ====%
+\input{awards/\infoCategory.tex}
 \ 
 \end{document}
