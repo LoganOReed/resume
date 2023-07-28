@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1690545281 "basic-resume.tex" "basic-resume/basic-resume.pdf" "basic-resume" 1690545281 0
+["pdflatex"] 1690545525 "basic-resume.tex" "basic-resume/basic-resume.pdf" "basic-resume" 1690545526 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1689853683 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1689853683 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1689853683 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -94,15 +94,15 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1689853683 40684 9b9ec0b4288972636ff6a3b9c4238efc ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1690535417 4482925 a1a254cacf5c7108f7b28226c8f3b19f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1690525185 6768059 6f5d734607678856d61c463c8733da86 ""
-  "achievements/software-engineer.tex" 1690545108 123 3621176a0a41672595c2167639d857de ""
-  "basic-resume.tex" 1690545272 873 8420d32ceee11ca4b20a7e0f4e649dd5 ""
-  "basic-resume/basic-resume.aux" 1690545281 585 6e16dfdbfb4f3caf7114ede34dce9db6 "pdflatex"
+  "basic-resume.tex" 1690545466 903 660e7513b90d5630d32d402c27ac1c8b ""
+  "basic-resume/basic-resume.aux" 1690545525 585 6e16dfdbfb4f3caf7114ede34dce9db6 "pdflatex"
   "basic.cls" 1690545280 2339 20c74e39f700502ed8185dbadfe7916b ""
-  "education/software-engineer.tex" 1690543055 224 57e6e0981870239672555d5b2bf5809d ""
-  "experience/software-engineer.tex" 1690543620 266 5427c301a917293510a944d3d727efbc ""
-  "profile/software-engineer.tex" 1690540149 135 c0f703832cfee7d5a98f944b60068c19 ""
-  "projects/software-engineer.tex" 1690545092 236 d58e804442ffee841407c162cfa4e4d3 ""
-  "skills/software-engineer.tex" 1690544849 127 c4f13abe1c2e44acdbecbfe35c558bf9 ""
+  "info/achievements/software-engineer.tex" 1690545409 123 3621176a0a41672595c2167639d857de ""
+  "info/education/software-engineer.tex" 1690545405 224 57e6e0981870239672555d5b2bf5809d ""
+  "info/experience/software-engineer.tex" 1690545397 266 5427c301a917293510a944d3d727efbc ""
+  "info/profile/software-engineer.tex" 1690545422 135 c0f703832cfee7d5a98f944b60068c19 ""
+  "info/projects/software-engineer.tex" 1690545427 236 d58e804442ffee841407c162cfa4e4d3 ""
+  "info/skills/software-engineer.tex" 1690545431 127 c4f13abe1c2e44acdbecbfe35c558bf9 ""
   (generated)
   "basic-resume/basic-resume.aux"
   "basic-resume/basic-resume.log"
