@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1690554189 "basic-resume.tex" "basic-resume/basic-resume.pdf" "basic-resume" 1690554189 0
+["pdflatex"] 1690556658 "basic-resume.tex" "basic-resume/basic-resume.pdf" "basic-resume" 1690556658 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1689853683 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1689853683 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1689853683 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -96,14 +96,14 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1690535417 4482925 a1a254cacf5c7108f7b28226c8f3b19f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1690525185 6768059 6f5d734607678856d61c463c8733da86 ""
   "basic-resume.tex" 1690545466 903 660e7513b90d5630d32d402c27ac1c8b ""
-  "basic-resume/basic-resume.aux" 1690554189 585 6e16dfdbfb4f3caf7114ede34dce9db6 "pdflatex"
+  "basic-resume/basic-resume.aux" 1690556658 585 6e16dfdbfb4f3caf7114ede34dce9db6 "pdflatex"
   "basic.cls" 1690553455 2357 cf543b81accfb155ef3f076f46af81ff ""
   "info/achievements/software-engineer.tex" 1690554188 349 0b8d91913881f2517808803e16b869bf ""
   "info/education/software-engineer.tex" 1690545405 224 57e6e0981870239672555d5b2bf5809d ""
   "info/experience/software-engineer.tex" 1690554143 1255 0e3014cde6c64920022896472d5934b3 ""
   "info/profile/software-engineer.tex" 1690545422 135 c0f703832cfee7d5a98f944b60068c19 ""
-  "info/projects/software-engineer.tex" 1690554175 595 aa85ddd22cdb5c60aadce64d8a17722b ""
-  "info/skills/software-engineer.tex" 1690551639 147 fb132ba6a7a95c7ffe9489fa151bd3a1 ""
+  "info/projects/software-engineer.tex" 1690556658 926 e322b733ca12c35baffb2bdd08d6c5a5 ""
+  "info/skills/software-engineer.tex" 1690555197 150 66934757c29ce3f79e36f28db95fc7bf ""
   (generated)
   "basic-resume/basic-resume.aux"
   "basic-resume/basic-resume.log"
