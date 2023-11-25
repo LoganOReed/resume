@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.7.28)  28 JUL 2023 12:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.8.25)  25 NOV 2023 01:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -641,22 +641,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 44.
- (./info/coverletter/lockheed-dataengineer.tex) [1
+ (./info/coverletter/jpmorganchase-datascience.tex) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}] (coverletter/coverletter.aux)
 Package rerunfilecheck Info: File `coverletter.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25852 strings out of 477985
- 496792 string characters out of 5840058
- 1861388 words of memory out of 5000000
+ 25846 strings out of 477985
+ 496770 string characters out of 5840058
+ 1863388 words of memory out of 5000000
  45595 multiletter control sequences out of 15000+600000
- 518883 words of font info for 71 fonts, out of 8000000 for 9000
+ 518730 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  129i,11n,122p,1008b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on coverletter/coverletter.pdf (1 page, 68392 bytes).
+Output written on coverletter/coverletter.pdf (1 page, 68506 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream

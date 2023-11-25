@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1700886160 "basic-resume.tex" "basic-resume/basic-resume.pdf" "basic-resume" 1700886160 0
+["pdflatex"] 1700887457 "it-resume.tex" "it-resume/it-resume.pdf" "it-resume" 1700887457 2
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1689853683 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1689853683 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1689853683 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -94,17 +94,17 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1689853683 40684 9b9ec0b4288972636ff6a3b9c4238efc ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1692995278 4478429 385ad1d6b64c93bd02d3a0cc5f72992b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1692995268 6768056 efb73fed0fcfc9a238cad696c05b5327 ""
-  "basic-resume.tex" 1693021128 903 660e7513b90d5630d32d402c27ac1c8b ""
-  "basic-resume/basic-resume.aux" 1700886160 585 6e16dfdbfb4f3caf7114ede34dce9db6 "pdflatex"
   "basic.cls" 1693021128 2357 cf543b81accfb155ef3f076f46af81ff ""
-  "info/achievements/software-engineer.tex" 1698215202 278 fa8e67021bf41c583f78578386814e78 ""
-  "info/education/software-engineer.tex" 1693021128 224 57e6e0981870239672555d5b2bf5809d ""
-  "info/experience/software-engineer.tex" 1698222375 936 ebe550a2af4352833d1383f21df88593 ""
-  "info/profile/software-engineer.tex" 1693021128 135 c0f703832cfee7d5a98f944b60068c19 ""
-  "info/projects/software-engineer.tex" 1698215360 1324 62e1916f4e4db6887a4146a8d173266b ""
-  "info/skills/software-engineer.tex" 1698212654 181 0b6edf4b3bc9fe8592537a48122151da ""
+  "info/achievements/basic-it.tex" 1700887404 278 fa8e67021bf41c583f78578386814e78 ""
+  "info/education/basic-it.tex" 1700887392 224 57e6e0981870239672555d5b2bf5809d ""
+  "info/experience/basic-it.tex" 1700887455 936 ebe550a2af4352833d1383f21df88593 ""
+  "info/profile/basic-it.tex" 1700887364 135 c0f703832cfee7d5a98f944b60068c19 ""
+  "info/projects/basic-it.tex" 1700887339 1187 96a9470f23e5213159e528910ffe23e1 ""
+  "info/skills/basic-it.tex" 1700887378 181 0b6edf4b3bc9fe8592537a48122151da ""
+  "it-resume.tex" 1700887436 894 c3a31d1847acf46d283cf6390020ff2c ""
+  "it-resume/it-resume.aux" 1700887457 585 6e16dfdbfb4f3caf7114ede34dce9db6 "pdflatex"
   (generated)
-  "basic-resume/basic-resume.aux"
-  "basic-resume/basic-resume.log"
-  "basic-resume/basic-resume.pdf"
+  "it-resume/it-resume.aux"
+  "it-resume/it-resume.log"
+  "it-resume/it-resume.pdf"
   (rewritten before read)
